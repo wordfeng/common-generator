@@ -1,4 +1,4 @@
-package com.lujianbuping.utils;
+package com.common.generate.utils;
 
 import java.util.Random;
 
