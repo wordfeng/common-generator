@@ -1,4 +1,4 @@
-package com.common.generate.utils;
+package com.common.generate.utils.core;
 
 import java.util.Random;
 
@@ -490,6 +490,9 @@ public class GenerateName {
 	 */
 	private static char[] CODE = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E',
 			'F' };
+	/**
+	 * 
+	 */
 	private static String MAX_UNICODE = "\u9FA5";
 	private static String MIN_UNICODE = "\u4E00";
 
@@ -498,13 +501,16 @@ public class GenerateName {
 		System.out.println(fullName());
 	}
 	
+	/**
+	 * 生成一个名字
+	 * @return
+	 */
 	public static String fullName() {
 		return randomSecondName()+randomFirstName();
 	}
 
 	/**
 	 * 随机姓氏
-	 * 
 	 * @return
 	 */
 	public static String randomSecondName() {
@@ -513,7 +519,7 @@ public class GenerateName {
 	}
 
 	/**
-	 * 随机一个名字
+	 * 随机一个名
 	 * 1-2个字
 	 * @return
 	 */
@@ -550,9 +556,8 @@ public class GenerateName {
 
 	/**
 	 * string 拼接的 unicode转汉字
-	 * 
-	 * @param unicode
-	 * @return
+	 * @param unicode \ua151
+	 * @return 
 	 */
 	public static String unicodeToString(String unicode) {
 		String str = unicode.replace("0x", "\\");

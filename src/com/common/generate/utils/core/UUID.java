@@ -1,4 +1,4 @@
-package com.common.generate.utils;
+package com.common.generate.utils.core;
 
 public class UUID {
 	
